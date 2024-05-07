@@ -1,4 +1,4 @@
-let datas = require('./csv/output/raw-data.json')
+let data = require('./csv/output/raw-data.json')
 const fs = require('fs')
 const path = require('path')
 
@@ -10,7 +10,7 @@ let pages = []
   欠缺landing page 圖片\前言、map for mobile
 */
 
-datas = datas.sort((a, b) => {
+data = data.sort((a, b) => {
   if (a.order - 0 < b.order - 0) {
     return -1
   } else if (a.order > b.order) {
@@ -29,7 +29,7 @@ const htmlMeta = {
   },
 }
 
-let firstPage = datas.find((data) => data.type === 'L')
+let firstPage = data.find((data) => data.type === 'L')
 firstPage = {
   order: firstPage.order,
   type: 'L',
@@ -52,7 +52,7 @@ firstPage = {
   },
 }
 
-const endingPage = datas
+const endingPage = data
   .filter((data) => data.type === 'E')
   .reduce((first) => {
     return {
@@ -183,13 +183,13 @@ const endingPage = datas
     }
   })
 
-datas = [
+data = [
   firstPage,
-  ...datas.filter((data) => data.type !== 'E' && data.type !== 'L'),
+  ...data.filter((data) => data.type !== 'E' && data.type !== 'L'),
   endingPage,
 ]
 
-datas.forEach(({ text, eng_text, order, type, filename, name }, index) => {
+data.forEach(({ text, eng_text, order, type, filename, name }, index) => {
   i18n_zh_tw.push({ text })
   i18n_en.push({ text: eng_text })
   let image
