@@ -1,14 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { environment } from '../const'
-import { projectWording } from '../consts/config'
+import { ogUrl, projectWording } from '../consts/config'
 
 function CustomDocument() {
-  const ogUrl =
-    environment === 'dev'
-      ? 'https://www.mirrormedia.mg/projects/dev-ccc_ukraine_2024/index.html'
-      : 'https://www.mirrormedia.mg/projects/ccc_ukraine_2024/index.html'
-
   return (
     <Html>
       <Head>

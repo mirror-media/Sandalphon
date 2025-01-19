@@ -225,7 +225,8 @@ export default function Ending({ id, image }) {
           <ProfileImageCaption>{t(`${id}.text.caption`)}</ProfileImageCaption>
         </ProfileImageWrapper>
         <Second>
-          <Independent lang={lang}>{t(`${id}.text.second.first`)}</Independent>
+          <Header lang={lang}>{t(`${id}.text.second.title`)}</Header>
+          <Independent lang={lang}>{t(`${id}.text.second.pre`)}</Independent>
           {t(`${id}.text.second.pairs`, { returnObjects: true }).map(
             (pair, index) => (
               <React.Fragment key={index}>
@@ -298,7 +299,7 @@ export default function Ending({ id, image }) {
           <ProfileImageCaption>{t(`${id}.text.caption`)}</ProfileImageCaption>
         </ProfileImageWrapper>
         <Second>
-          <Independent lang={lang}>{t(`${id}.text.second.first`)}</Independent>
+          <Header lang={lang}>{t(`${id}.text.second.title`)}</Header>
           {t(`${id}.text.second.pairs`, { returnObjects: true }).map(
             (pair, index) => (
               <React.Fragment key={index}>

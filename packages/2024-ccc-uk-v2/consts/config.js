@@ -1,16 +1,22 @@
-const env = 'dev' // 'dev' | 'prod'
+const env = 'prod' // 'dev' | 'prod'
 const ga4Ids = {
   dev: 'G-36HYH6NF6P',
   prod: 'G-341XFN0675',
 }
 export const ga4Id = ga4Ids[env]
 
+const slug = 'ccc_ukraine_202405'
+
 export const projectWording = {
-  slug: 'ccc_ukraine_202405',
-  ogTitle: `勿忘烏克蘭：張乾琦．戰地紀實/Ukraine: Lest We Forget. Chien-Chi Chang's Reportage of the Two-Year Anniversary of the Russia-Ukraine War`,
-  ogImage: `https://v3-statics.mirrormedia.mg/images/e1ad0adb-3270-45f8-bc73-06b645a11a10-w1200.jpg`,
-  ogDescription: `你還記得布查大屠殺嗎？戰爭的殘忍景象曾讓全球民主國家憤慨，各國政要紛紛表達支持烏克蘭。兩年過去了，不少西方國家已經產生戰爭疲勞，質疑為何繼續資助這場戰爭的聲音愈來愈高；一般人的悲憫之情也在消退，對戰爭畫面已逐漸無感。
-  張乾琦始終沒有忘記烏克蘭。他在文章裡說，當奧地利人以高空煙火慶祝新年時，烏克蘭人卻在爆炸聲中驚醒。他冒著嚴寒浴雪而行，第八次前往烏克蘭戰地，見證前線「絞肉機」般漫長艱苦的戰況。/| Do you still remember the Bucha massacre? The brutal scenes of war once stirred indignation among democratic nations worldwide, with leaders expressing support for Ukraine. Two years have passed, and many Western countries have developed war fatigue, questioning why they should continue funding this war. The voices of ordinary people expressing compassion have also faded, gradually becoming desensitized to the images of war.<br>Chien-Chi Chang has never forgotten Ukraine. In his article, he mentions that while Austrians celebrate the new year with sky-bound fireworks, Ukrainians wake up to the sounds of explosions. Braving the cold, he travels through the snow for the eighth time to the Ukrainian war zone, witnessing the prolonged and arduous conditions on the frontlines, often likened to a "meat grinder.”`,
+  slug,
+  ogTitle: `旗幟下　別無選擇：俄羅斯戰俘獨家專訪/Under the Banner: No Escape`,
+  ogImage: `https://v3-statics.mirrormedia.mg/images/8ff392db-632f-4518-a219-8655178d1909-w1600.jpg`,
+  ogDescription: `| 烏俄戰爭開打2年多以來，張乾琦前後8次前往烏克蘭戰地進行攝影記錄工作。最近這次，他獲得批准，成為華文媒體首位採訪俄羅斯戰俘的記者。<br>不同於之前幾次，張乾琦隨烏軍前進，見證戰爭對這塊土地與人民帶來的殘酷、荒謬與悲涼。這一次，他將鏡頭凝視俄羅斯戰俘，透過專訪聆聽他者之聲。他的提問和觀察角度像稜鏡一般，照出這場絕望之戰中人性的卑微。例如，才22歲的俄羅斯中尉告訴張乾琦：「我只想回家。」「我只有一條路可走—加入戰爭。」/ “No one asked whether we wanted to go. We got the order, and forward we went.”<br>These words come from a captured Russian lieutenant from the 71st Motorized Infantry Regiment, interviewed in Zaporizhia. Like countless others, his story reveals war's often unwanted realities.`,
 }
+
+export const ogUrl =
+  env === 'dev'
+    ? 'https://www.mirrormedia.mg/projects/dev-ccc_ukraine_202405/index.html'
+    : 'https://www.mirrormedia.mg/projects/ccc_ukraine_202405/index.html'
 
 export const projectName = projectWording.slug
