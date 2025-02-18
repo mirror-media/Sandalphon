@@ -161,7 +161,7 @@ const endingPage = data
             `Article by: Chien-Chi Chang`,
             `Photography by: Chien-Chi Chang`,
             'Curation, design and development by:',
-            'Wen-Han Lee, Lee-Yu Tseng, Yu-Ju Lee, I-Ching Wang, Hsin-Chan Chien',
+            'Wen-Han Lee, Lee-Yu Tseng, Yu-Ju Lee, Hsin-Chan Chien',
             `Translator: Hsieh Shu-kuan`,
             `English Proofreading: Chien-Chi Chang`,
           ],
