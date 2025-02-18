@@ -1,4 +1,4 @@
-const env = 'dev' // 'dev' | 'prod'
+const env = 'prod' // 'dev' | 'prod'
 const ga4Ids = {
   dev: 'G-36HYH6NF6P',
   prod: 'G-341XFN0675',
