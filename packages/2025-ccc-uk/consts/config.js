@@ -9,12 +9,10 @@ const slug = 'ccc_ukraine_202502'
 
 export const projectWording = {
   slug,
-  ogTitle: `戰與逃：自由的代價`,
+  ogTitle: `戰與逃：自由的代價 / Fight or Flee: The Price of Freedom`,
   ogImage: `https://v3-statics.mirrormedia.mg/images/666ecc28-d0dd-4c7d-a070-2e0d8ab80470-w1600.jpg`,
-  ogDescription: `你還記得二十歲時的自己嗎？你在讀書嗎？還是在工作？你有什麼夢想？
-  二十來歲的頓涅茨克居民迪馬，自2022年2月在佔領區被俄羅斯軍隊強制徵召後，用日記紀錄戰爭惡魔的面貌。短短七個月後，他在戰場上喪生。
-  烏俄戰爭滿三年了，交戰雙方粗估破百萬傷亡，多少珍貴生命成為冰冷的數字、無意義的砲灰。紀實攝影家張乾琦自開戰以來，第九次冒險深入烏克蘭戰地，他用圖、文幫我們紀錄下更多像迪馬這樣的故事。
-  奮戰的勇氣、死亡的氣味、逃兵的心聲…，64歲的攝影老兵藉著持續紀錄戰地實況，在在反思他心心念念、深愛著的台灣的處境。`,
+  ogDescription: `烏俄戰爭滿三週年了，交戰雙方粗估破百萬傷亡，多少珍貴生命成為冰冷的數字、無意義的砲灰。紀實攝影家張乾琦第9次冒險深入烏克蘭戰地，用敏銳的影像和文字紀錄戰爭的色溫、聲響、氣味和時空。
+  他總是背著攝影機前往他方、凝視他者，心心念念的仍是故鄉台灣。64歲的攝影老兵一次次見證烏克蘭人奮戰的勇氣、死亡的氣味、逃兵的心聲……，他一方面無畏恐懼把鏡頭靠得夠近，一方面在心態上卻也退得夠遠，不被激情幻覺綁架，而是靜靜觀照，希望能從中尋找屬於自身對照的意義。 / The city was almost unrecognizable when I arrived in Odesa on a chilly mid-November evening. Darkness engulfed the streets, broken only by the faint flicker of candles in apartment windows, the muted glow of passing headlights, and the relentless hum of diesel generators. The acrid smell of fuel clung to the air, and the noise was inescapable—like an unending cacophony of lawnmowers cutting through an eerie, oppressive silence.`,
 }
 
 export const ogUrl =
