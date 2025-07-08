@@ -64,10 +64,10 @@ const ProfileImageWrapper = styled.div`
   }
 `
 const ProfileImage = styled.img`
-  width: 100%;
+  width: 70%;
 `
 const ProfileImageCaption = styled.div`
-  width: 100%;
+  width: 70%;
   font-weight: 300;
   line-height: 21.6px;
   text-align: right;
