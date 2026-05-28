@@ -96,7 +96,7 @@ export default function CustomHead(props: CustomHeadProps) {
   const router = useRouter()
   const currentPath = router.asPath
   const url = `${staticFileDestination}${
-    currentPath === '/' ? '' : currentPath
+    currentPath === '/' ? '/index.html' : currentPath
   }`
 
   const siteInformation = {
