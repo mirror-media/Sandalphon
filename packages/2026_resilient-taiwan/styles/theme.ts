@@ -5,7 +5,8 @@ import {
   titleColor,
   textColor,
   borderColor,
-  headerBackgroundColor,
+  headerBgColor,
+  navListItemBgColor,
 } from '~/config'
 
 const mediaSize = {
@@ -30,7 +31,8 @@ const theme = {
 }
 
 const color = {
-  headerBackground: headerBackgroundColor,
+  headerBackground: headerBgColor,
+  navListItemBackground: navListItemBgColor,
   background: backgroundColor,
   primary: primaryColor,
   secondary: secondaryColor,
