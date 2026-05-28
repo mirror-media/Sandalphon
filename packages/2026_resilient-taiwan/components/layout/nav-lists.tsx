@@ -27,8 +27,8 @@ const Item = styled.li<{ show: boolean }>`
   font-weight: 700;
   text-align: center;
   list-style: none;
-  color: ${color.white};
-  background: ${color.headerBackground};
+  color: ${color.text.title};
+  background: ${color.navListItemBackground};
   padding: 5px 8px;
   border-radius: 4px;
   cursor: pointer;
