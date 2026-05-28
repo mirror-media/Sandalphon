@@ -18,7 +18,7 @@ const ButtonWrapper = styled.div`
 
 const ApplyButton = styled.div`
   cursor: pointer;
-  background-color: #2eabad;
+  background-color: #2d9bd7;
   color: ${color.white};
   font-size: 16px;
   font-weight: 700;
@@ -27,7 +27,6 @@ const ApplyButton = styled.div`
   padding: 12px;
   gap: 10px;
   border-radius: 16px;
-  border: 1px solid #000000;
 
   ${breakpoint.xl} {
     font-size: 20px;
