@@ -6,6 +6,7 @@ import { ShareButton } from '@readr-media/share-button'
 import MirrormediaIcon from '~/public/icon/mirror-media-icon.svg'
 import Sidebar from '~/components/sidebar'
 import NavLists from '~/components/layout/nav-lists'
+import { sideBarTextColor } from '~/config'
 
 const HeaderWrapper = styled.div<{ isVisible: boolean }>`
   width: 100%;
@@ -94,7 +95,7 @@ export default function Header(): JSX.Element {
       <Aside>
         <NavLists />
         <Sidebar />
-        <ShareButton />
+        <ShareButton pathColor={sideBarTextColor} />
       </Aside>
     </HeaderWrapper>
   )
