@@ -51,12 +51,12 @@ export default function Registration({
       <ContentBlock content={content} />
       <ButtonWrapper>
         <Link
-          href="https://readr.oen.tw/events/32aV7T5C5sFAjt8IAmKbbjzQ9Er"
+          href="https://mirrormedia.oen.tw/events/3ECnDDv7zxjsXxLelvVFXQlqWPd"
           target="_blank"
         >
           <ApplyButton>信用卡報名</ApplyButton>
         </Link>
-        <Link href="https://forms.gle/R9VRViCA5XMRmxFz7" target="_blank">
+        <Link href="https://forms.gle/nhKaxJRBsyGPcZPF6" target="_blank">
           <ApplyButton>匯款報名</ApplyButton>
         </Link>
       </ButtonWrapper>
