@@ -10,7 +10,12 @@ import {
 import { zIndex, breakpoint } from '~/styles/theme'
 import MediaIcons from '~/components/sidebar/media-icons'
 import { ToggleIcon } from '~/components/sidebar/toggle-icon'
-import { sideBarBgColor, sideBarHoverColor, sideBarTextColor } from '~/config'
+import {
+  headerBgColor,
+  sideBarBgColor,
+  sideBarHoverColor,
+  sideBarTextColor,
+} from '~/config'
 import { useNavLists } from '~/contexts/nav-list'
 
 const SideMenuWrapper = styled.nav<{ show: boolean }>`
@@ -73,7 +78,7 @@ const ToggleButton = styled.div<{ show: boolean }>`
   position: fixed;
   top: 12px;
   right: 12px;
-  background: rgba(0, 0, 0, 1);
+  background: ${headerBgColor};
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
   display: flex;
