@@ -14,20 +14,22 @@ const OG_DESC: string = process.env.NEXT_PUBLIC_OG_DESC || ''
 const OG_IMAGE_URL: string = process.env.NEXT_PUBLIC_OG_IMAGE_URL || ''
 
 // Color 設定
-const primaryColor: string = process.env.NEXT_PUBLIC_PRIMARY_COLOR || '#E2FBFE'
+const primaryColor: string = process.env.NEXT_PUBLIC_PRIMARY_COLOR || '#ECF7FF'
 const secondaryColor: string =
   process.env.NEXT_PUBLIC_SECONDARY_COLOR || '#ffffff'
-const backgroundColor: string = process.env.NEXT_PUBLIC_BG_COLOR || '#BBD4DA'
-const titleColor: string = process.env.NEXT_PUBLIC_TITLE_COLOR || '#000000'
-const textColor: string = process.env.NEXT_PUBLIC_TEXT_COLOR || '#000000'
-const borderColor: string = process.env.NEXT_PUBLIC_BORDER_COLOR || '#000000'
+const backgroundColor: string = process.env.NEXT_PUBLIC_BG_COLOR || '#CFE1EE'
+const titleColor: string = process.env.NEXT_PUBLIC_TITLE_COLOR || '#192B81'
+const textColor: string = process.env.NEXT_PUBLIC_TEXT_COLOR || '#5A5A61'
+const borderColor: string = process.env.NEXT_PUBLIC_BORDER_COLOR || '#5A5A61'
 const sideBarBgColor: string =
-  process.env.NEXT_PUBLIC_SIDEBAR_BG_COLOR || 'rgba(11, 25, 48, 0.8)'
+  process.env.NEXT_PUBLIC_SIDEBAR_BG_COLOR || '#192B81'
 const sideBarTextColor: string =
-  process.env.NEXT_PUBLIC_SIDEBAR_TEXT_COLOR || 'rgba(182, 242, 255, 1)'
+  process.env.NEXT_PUBLIC_SIDEBAR_TEXT_COLOR || '#FFF'
 const sideBarHoverColor: string =
-  process.env.NEXT_PUBLIC_SIDEBAR_HOVER_COLOR || '#ffffff'
-const headerBackgroundColor = process.env.NEXT_PUBLIC_HEADER_COLOR || '#000000'
+  process.env.NEXT_PUBLIC_SIDEBAR_HOVER_COLOR || '#2D9BD7'
+const headerBgColor = process.env.NEXT_PUBLIC_HEADER_BG_COLOR || '#192944'
+const navListItemBgColor =
+  process.env.NEXT_PUBLIC_NAV_LIST_ITEM_BG_COLOR || '#CEEBFC'
 
 // Background Image 專題背景底圖設定
 const bgImageURL: string = process.env.NEXT_PUBLIC_BG_IMAGE_URL || ''
@@ -84,6 +86,8 @@ export {
   GTM_ID,
   SITE_URL,
   JSON_URL,
+  headerBgColor,
+  navListItemBgColor,
   primaryColor,
   secondaryColor,
   backgroundColor,
@@ -93,7 +97,6 @@ export {
   sideBarBgColor,
   sideBarTextColor,
   sideBarHoverColor,
-  headerBackgroundColor,
   OG_TITLE,
   OG_DESC,
   OG_IMAGE_URL,
