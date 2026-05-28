@@ -41,11 +41,6 @@ const LogosImage = styled.div`
     height: 40px;
     width: auto;
   }
-
-  .readr-media-react-image:nth-child(2) {
-    max-height: 20px;
-    height: 20px;
-  }
 `
 
 type PartnersProps = {
