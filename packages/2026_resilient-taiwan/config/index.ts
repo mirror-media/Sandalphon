@@ -6,7 +6,7 @@ const projectName: string = String(process.env.NEXT_PUBLIC_PROJECT_NAME)
 // JSON 設定
 const JSON_URL: string =
   process.env.NEXT_PUBLIC_DATA_JSON ||
-  'https://v3-statics.mirrormedia.mg/json/forum_202509_final.json'
+  'https://v3-statics.mirrormedia.mg/json/2026_Resilient-Taiwan.json'
 
 // OpenGraph 設定
 const OG_TITLE: string = process.env.NEXT_PUBLIC_OG_TITLE || '2026韌性台灣論壇'
