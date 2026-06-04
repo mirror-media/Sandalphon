@@ -158,6 +158,7 @@ export default function CustomHead(props: CustomHeadProps) {
 
       <meta name="application-name" content={siteInformation.title} />
       <link rel="canonical" href={url} />
+      <meta name="robots" content="index, max-image-preview:large" />
     </Head>
   )
 }
