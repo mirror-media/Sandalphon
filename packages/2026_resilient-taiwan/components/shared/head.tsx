@@ -157,6 +157,7 @@ export default function CustomHead(props: CustomHeadProps) {
       <OpenGraph properties={siteInformation} />
 
       <meta name="application-name" content={siteInformation.title} />
+      <link rel="canonical" href={url} />
     </Head>
   )
 }
