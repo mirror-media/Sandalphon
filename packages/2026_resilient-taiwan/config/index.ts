@@ -13,7 +13,9 @@ const OG_TITLE: string = process.env.NEXT_PUBLIC_OG_TITLE || '2026韌性台灣�
 const OG_DESC: string =
   process.env.NEXT_PUBLIC_OG_DESC ||
   '全球地緣政治洗牌與科技秩序重組的浪潮正加速襲來。站在這場變局的風口浪尖，臺灣的戰略思維必須從過去追求的「高成長率」，全面轉向厚植「高耐受度」。本論壇以「韌性臺灣」為核心，不再止步於單一產業的技術堆疊，而是從更深層的國家安全與供應鏈博弈出發，解構臺灣在動盪時代下的生存與反制之道。'
-const OG_IMAGE_URL: string = process.env.NEXT_PUBLIC_OG_IMAGE_URL || ''
+const OG_IMAGE_URL: string =
+  process.env.NEXT_PUBLIC_OG_IMAGE_URL ||
+  'https://v3-statics.mirrormedia.mg/images/85b38e94-b95f-43e4-90bf-e81c60e6e927.jpg'
 
 // Color 設定
 const primaryColor: string = process.env.NEXT_PUBLIC_PRIMARY_COLOR || '#ECF7FF'
