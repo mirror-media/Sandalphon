@@ -4,7 +4,7 @@
 - 此專案使用 Next13 搭配 styled-component。
 - 歷屆論壇專題：
   - [2023 風力發電論壇](https://events.mirrormedia.mg/events/windpowerforum2023/index.html)
-  - 活動影音如需使用輪播圖套件可以參考yc大大的([packages/forum-2024](https://github.com/tyc67/Sandalphon/tree/forum-2024/packages/forum-2024))
+  - 活動影音如需使用輪播圖套件可以參考 yc 大大的([packages/forum-2024](https://github.com/tyc67/Sandalphon/tree/forum-2024/packages/forum-2024))
 
 ## 使用教學
 
@@ -39,22 +39,25 @@
 
 ## Environment Variables (環境變數)
 
-| 變數名稱                       | 資料型態 | 初始值                                                  | 變數說明                       |
-| ------------------------------ | -------- | ------------------------------------------------------- | ------------------------------ |
-| NEXT_PUBLIC_ENV                | 字串     | 'localhost'                                             | 環境設定                       |
-| NEXT_PUBLIC_PROJECT_NAME       | 字串     | ''                                                      | 專案名稱                       |
-| NEXT_PUBLIC_DATA_JSON          | 字串     | 'https://v3-statics.mirrormedia.mg/json/forum2023.json' | 專題 JSON 資料來源             |
-| NEXT_PUBLIC_OG_TITLE           | 字串     | ''                                                      | OG 標題                        |
-| NEXT_PUBLIC_OG_DESC            | 字串     | ''                                                      | OG 描述                        |
-| NEXT_PUBLIC_PRIMARY_COLOR      | 字串     | '#E2FBFE'                                               | 專題主色                       |
-| NEXT_PUBLIC_SECONDARY_COLOR    | 字串     | '#ffffff'                                               | 專題次要色                     |
-| NEXT_PUBLIC_TITLE_COLOR        | 字串     | '#000000'                                               | 專題大標題顏色                 |
-| NEXT_PUBLIC_BG_COLOR           | 字串     | '#BBD4DA'                                               | 專題背景底色                   |
-| NEXT_PUBLIC_TEXT_COLOR         | 字串     | '#000000'                                               | 專題內文文字顏色               |
-| NEXT_PUBLIC_BORDER_COLOR       | 字串     | '#000000'                                               | 論壇議程長條區塊外框顏色       |
-| NEXT_PUBLIC_SIDEBAR_TEXT_COLOR | 字串     | 'rgba(182, 242, 255, 1)'                                | 手機版展開式側欄小標文字顏色   |
-| NEXT_PUBLIC_SIDEBAR_BG_COLOR   | 字串     | 'rgba(11, 25, 48, 0.8)'                                 | 手機版展開式側欄底圖顏色       |
-| NEXT_PUBLIC_BG_IMAGE_URL       | 字串     | ''                                                      | 專題背景底圖（單張呈現不重複） |
+| 變數名稱                           | 資料型態 | 初始值                                                  | 變數說明                              |
+| ---------------------------------- | -------- | ------------------------------------------------------- | ------------------------------------- |
+| NEXT_PUBLIC_ENV                    | 字串     | 'localhost'                                             | 環境設定                              |
+| NEXT_PUBLIC_PROJECT_NAME           | 字串     | ''                                                      | 專案名稱                              |
+| NEXT_PUBLIC_DATA_JSON              | 字串     | 'https://v3-statics.mirrormedia.mg/json/forum2023.json' | 專題 JSON 資料來源                    |
+| NEXT_PUBLIC_OG_TITLE               | 字串     | ''                                                      | OG 標題                               |
+| NEXT_PUBLIC_OG_DESC                | 字串     | ''                                                      | OG 描述                               |
+| NEXT_PUBLIC_PRIMARY_COLOR          | 字串     | '#E2FBFE'                                               | 專題主色                              |
+| NEXT_PUBLIC_SECONDARY_COLOR        | 字串     | '#ffffff'                                               | 專題次要色                            |
+| NEXT_PUBLIC_TITLE_COLOR            | 字串     | '#000000'                                               | 專題大標題顏色                        |
+| NEXT_PUBLIC_BG_COLOR               | 字串     | '#BBD4DA'                                               | 專題背景底色                          |
+| NEXT_PUBLIC_TEXT_COLOR             | 字串     | '#000000'                                               | 專題內文文字顏色                      |
+| NEXT_PUBLIC_BORDER_COLOR           | 字串     | '#000000'                                               | 論壇議程長條區塊外框顏色              |
+| NEXT_PUBLIC_SIDEBAR_TEXT_COLOR     | 字串     | 'rgba(182, 242, 255, 1)'                                | 手機版展開式側欄小標文字顏色          |
+| NEXT_PUBLIC_SIDEBAR_BG_COLOR       | 字串     | 'rgba(11, 25, 48, 0.8)'                                 | 手機版展開式側欄底圖顏色              |
+| NEXT_PUBLIC_BG_IMAGE_URL           | 字串     | ''                                                      | 專題背景底圖（單張呈現不重複）        |
+| NEXT_PUBLIC_SIDEBAR_HOVER_COLOR    | 字串     | '#2D9BD7'                                               | 手機版展開式側欄小標文字 hover 效果色 |
+| NEXT_PUBLIC_HEADER_BG_COLOR        | 字串     | '#192944'                                               | 專題 header 背景色                    |
+| NEXT_PUBLIC_NAV_LIST_ITEM_BG_COLOR | 字串     | '#CEEBFC'                                               | 專題導覽列項目按鈕背景色              |
 
 註：OG 圖片設定方式：目前設計上不透過環境變數指定，要請需求方提供： (1) 尺寸：1200x630 (2) 檔案格式：jpg / jpeg 的圖片，並上傳到 GCS 上該次論壇專題的資料夾內的 images 資料夾內。（ code 寫法設定統一吃 /images/og.jpg 檔案當作 OG Image）
 
