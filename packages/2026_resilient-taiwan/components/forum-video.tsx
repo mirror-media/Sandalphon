@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `
 
 const SwiperWrapper = styled.div`
-  .swipper-container {
+  .swiper-container {
     --swiper-navigation-size: 30px;
     margin: 0px;
   }
