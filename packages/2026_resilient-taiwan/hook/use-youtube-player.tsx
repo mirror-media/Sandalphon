@@ -20,13 +20,32 @@ export function YoutubePlayerProvider({ children }: PropsWithChildren) {
 
   useEffect(() => {
     if (state.YoutubePlayer) return
-    const tag = document.createElement('script')
-    tag.src = 'https://www.youtube.com/iframe_api'
-    const firstScriptTag = document.getElementsByTagName('script')[0]
-    firstScriptTag?.parentNode?.insertBefore(tag, firstScriptTag)
 
-    window.onYouTubeIframeAPIReady = () => {
+    if (typeof window !== 'undefined' && window.YT && window.YT.Player) {
       setState({ YoutubePlayer: window.YT.Player })
+      return
+    }
+
+    const existingScript = document.querySelector(
+      'script[src="https://www.youtube.com/iframe_api"]'
+    )
+    if (!existingScript) {
+      const tag = document.createElement('script')
+      tag.src = 'https://www.youtube.com/iframe_api'
+      const firstScriptTag = document.getElementsByTagName('script')[0]
+      firstScriptTag?.parentNode?.insertBefore(tag, firstScriptTag)
+    }
+
+    const previousCallback = window.onYouTubeIframeAPIReady
+    window.onYouTubeIframeAPIReady = () => {
+      if (previousCallback) previousCallback()
+      if (window.YT && window.YT.Player) {
+        setState({ YoutubePlayer: window.YT.Player })
+      }
+    }
+
+    return () => {
+      window.onYouTubeIframeAPIReady = previousCallback
     }
   }, [state.YoutubePlayer])
   return (
