@@ -21,7 +21,7 @@ export function YoutubePlayerProvider({ children }: PropsWithChildren) {
   useEffect(() => {
     if (state.YoutubePlayer) return
 
-    if (typeof window !== 'undefined' && window.YT && window.YT.Player) {
+    if (window.YT && window.YT.Player) {
       setState({ YoutubePlayer: window.YT.Player })
       return
     }
