@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "cp .env.dev .env.local && next dev",
     "build:dev": "cp .env.dev .env.local && next build",
-    "deploy:dev": "cd out && gcloud storage cp --recursive . gs://dev-course.mirrormedia.mg && gcloud storage objects update gs://dev-course.mirrormedia.mg/_next/static/media/* --content-type=\"font/woff2\"",
+    "deploy:dev": "cd out && gcloud storage cp --recursive . gs://mirrormedia-nonprod-course-dev && gcloud storage objects update gs://mirrormedia-nonprod-course-dev/_next/static/media/* --content-type=\"font/woff2\"",
     "dev:prod": "cp .env.prod .env.local && next dev",
     "build:prod": "cp .env.prod .env.local && next build",
     "deploy:prod": "cd out && pwd && gcloud storage cp --recursive . gs://course.mirrormedia.mg  && gcloud storage objects update gs://course.mirrormedia.mg/_next/static/media/* --content-type=\"font/woff2\"",

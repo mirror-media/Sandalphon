@@ -43,7 +43,7 @@ The project leverages the next.js framework to export the static html files whic
 run `yarn export` to export static html files.
 
 for dev (no cache version):
-gsutil -h "Cache-Control:no-store" -m cp -r ./out/\* gs://v3-statics-dev.mirrormedia.mg/projects/{project_name}
+gsutil -h "Cache-Control:no-store" -m cp -r ./out/\* gs://mirrormedia-nonprod-statics-dev/projects/{project_name}
 
 for prod:
 gsutil -m cp -r ./out/\* gs://v3-statics.mirrormedia.mg/projects/{project_name}
